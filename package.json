@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "inquirer": "^9.1.1"
+  },
+  "name": "json",
+  "version": "1.0.0",
+  "description": "Nodejs app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Nodejs",
+    "Inquirer"
+  ],
+  "author": "Hamdi Yusuf",
+  "license": "MIT"
+}
