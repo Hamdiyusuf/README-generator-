@@ -3,7 +3,7 @@ const inquirer = require('inquirer');
 const fs = require('fs'); 
 
 // Link to Markdown file 
-const generatePage = require('./utils/gennoerateMarkdown.js');
+const generatePage = require('./generateMarkdown.js');
 
 // Questions
 const questions = () => { 
@@ -76,8 +76,58 @@ const questions = () => {
             }
         }
     },
-    ,
-   
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What is your email?',
+        validate: nameInput => {
+            if (nameInput) {
+                return true;
+            } else {
+                console.log('Please enter a valid email address!');
+                return false; 
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'Github',
+        message: 'What is your Github username?',
+        validate: nameInput => {
+            if (nameInput) {
+                return true;
+            } else {
+                console.log('Please enter a github username!');
+                return false; 
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'test',
+        message: 'How can someone test the application?',
+        validate: nameInput => {
+            if (nameInput) {
+                return true;
+            } else {
+                console.log('Please enter a testing requirement!');
+                return false; 
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'contributors',
+        message: 'Who are the contributors to the project?',
+        validate: nameInput => {
+            if (nameInput) {
+                return true;
+            } else {
+                console.log('Please enter the contributors!');
+                return false; 
+            }
+        }
+    },
 ]);
 };
 

@@ -1,7 +1,4 @@
 {
-  "dependencies": {
-    "inquirer": "^9.1.1"
-  },
   "name": "json",
   "version": "1.0.0",
   "description": "Nodejs app",
@@ -14,5 +11,8 @@
     "Inquirer"
   ],
   "author": "Hamdi Yusuf",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
 }
